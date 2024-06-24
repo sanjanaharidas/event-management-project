@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<br>
+<div class="container" style="margin-bottom:100px;">
+    <div class="row mt-2">
+      {% for i in e %}
+      <div class="col-sm-4 mb-3">
+          <img src="{{ i.img.url }}" alt="img" class="img-fluid" style="max-height:400px; max-width:100%;">
+      </div>
+      <div class="col-sm-8 mb-3">
+          <p><b>{{ i.name }}</b></p>
+          <p>{{ i.desc }}</p>
+          <a href="{% url 'eventapp:booking' %}" class="btn btn-primary">Book Now</a>
+      </div>
+      {% endfor %}
+  </div>
+</div>
+{% endblock %}
+

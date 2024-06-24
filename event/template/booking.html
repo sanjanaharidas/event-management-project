@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container p-3 text-center">
+    <h1 style="color:black;">Book Your Events With Us</h1><br>
+    <form action="{% url 'eventapp:booking' %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Book Now</button>
+    </form>
+    <br><br>
+    <a href="{% url 'eventapp:confirm' %}" class="btn btn-primary">Go to Confirm Page</a>
+</div>
+
+{% endblock %}

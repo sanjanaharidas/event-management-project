@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div  class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{% static 'images/banner1.webp' %}" height="500px" width="100%">
+    </div>
+  </div>
+</div>
+<br>
+    <div class="row">
+        <div class="col-md-12">
+<center><h2>About Us</h2></center>
+<p style="text-align:justify;line-height:2;">At Eventia, we believe in creating unforgettable experiences that leave lasting impressions. With over a decade of expertise in the industry, our team of dedicated professionals brings passion, creativity, and meticulous attention to detail to every event we manage. From intimate gatherings to large-scale corporate events, we tailor our services to meet your specific needs and vision. Our commitment to excellence and our innovative approach ensure that every event is unique and flawlessly executed. At Eventia, we don't just plan events; we craft moments that become cherished memories. Let us turn your dreams into reality and make your next event extraordinary.
+
+</p>
+
+    </div>
+<br><br><br>
+    <div  class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{% static 'images/banner3.jpeg' %}" height="100%" width="100%">
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="container">
+    <center><h2>Why Choose Us</h2></center>
+    <div class="row">
+        <div class="col-md-12">
+            <p style="text-align:justify;line-height:2;">Choosing the right event management company can make all the difference in creating a memorable and seamless experience. At Eventia, we pride ourselves on our exceptional attention to detail, personalized service, and innovative approach to event planning. Our team of seasoned professionals is dedicated to understanding your unique vision and bringing it to life with precision and creativity. With a track record of successful events ranging from intimate gatherings to grand celebrations, we have the expertise and passion to handle every aspect of your event flawlessly. Our commitment to excellence, coupled with our extensive network of trusted vendors, ensures that your event will be executed with the highest quality and professionalism. At Eventia, your satisfaction is our top priority, and we go above and beyond to exceed your expectations, making us the perfect partner for your next event.</p>
+        </div>
+    </div>
+<br><br><br><br>
+  {% endblock %}

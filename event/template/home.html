@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+
+{% endblock %}
+{% block content %}
+
+<div id="carouselExampleSlides" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{% static 'images/about2.jpg' %}" height="700px" width="100%">
+        <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+            <p style="color:white;" class="mt-5 fs-3 text-uppercase">Crafting Unforgettable Experiences</p>
+            <h1 style="color:white;" class="display-1 fw-bolder text-capitalize">Your Vision, Our Expertise</h1>
+        </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container-fluid mt-3" style="margin-bottom:100px;">
+   <center> <b><h3>Our Services</h3></b></center>
+    <p style="text-align:justify;line-height:2;">At Eventia, we specialize in delivering exceptional event management services tailored to your unique needs. Our comprehensive offerings cover every aspect of event planning and coordination, ensuring a seamless and memorable experience. We begin by working closely with you to understand your vision, then handle all the details, from venue selection and management to creative design and decor. Our team excels in sourcing top-tier entertainment and creating customized activities that engage and delight your guests. We also provide expert catering and menu planning, partnering with leading caterers to offer diverse culinary options that complement your event's theme and preferences. Our advanced technology and audio-visual solutions enhance the attendee experience, while our meticulous logistics and on-site management ensure everything runs smoothly. After the event, we assist with wrap-up tasks and gather feedback to continually refine our services. With a passionate and experienced team, Eventia is dedicated to making your event a resounding success, leaving lasting impressions on all who attend.</p>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="{% static 'images/event2.jpg' %}" class="img-fluid" style="height:400px; width:100%;" alt="Explore the wild">
+      <div class="carousel-caption d-none d-md-block">
+        <center><h1>Bringing Dreams to Life</h1></center>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img src="{% static 'images/about2.jpg' %}" class="img-fluid" style="height:400px; width:100%;" alt="Explore the wild">
+      <div class="carousel-caption d-none d-md-block">
+        <center><h1>Bringing Dreams to Life</h1></center>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-md-6">
+      <img src="{% static 'images/shuffle_6.jpg' %}" class="img-fluid" style="height:400px; width:100%;" alt="Explore the wild">
+      <div class="carousel-caption d-none d-md-block">
+        <center><h1>Bringing Dreams to Life</h1></center>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img src="{% static 'images/page1_img5.jpg' %}" class="img-fluid" style="height:400px; width:100%;" alt="Explore the wild">
+      <div class="carousel-caption d-none d-md-block">
+        <center><h1>Bringing Dreams to Life</h1></center>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container-fluid p-5" style="background-color:#f2f2f2;">
+  <div class="row">
+    <div class="col-md-4">
+      <center>
+        <h3><b>Creativity</b></h3>
+      </center>
+    </div>
+    <div class="col-md-4">
+      <center>
+        <h3><b>Precision</b></h3>
+      </center>
+    </div>
+    <div class="col-md-4">
+      <center>
+        <h3><b>Dynamic</b></h3>
+      </center>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div id="carouselExample" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{% static 'images/banner5.webp' %}" height="500px" width="100%">
+      <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+        <p style="color:black;" class="mt-5 fs-3 text-uppercase">Where every detail matters</p>
+        <a href="{% url 'eventapp:home' %}" class="btn btn-primary px-4 py-2 fs-5 mt-5">Explore Now</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div>
+    <h4 class="text-center text-success">{{msg}}</h4>
+    <h4 class="text-center text-danger">Thank You for booking!</h4>
+    <h4 class="text-center"><a href="{% url 'eventapp:home' %}">We will get back to you soon...</a></h4>
+</div>
+{% endblock %}

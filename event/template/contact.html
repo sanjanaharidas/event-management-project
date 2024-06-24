@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<header>
+    <center><h1>Contact Us</h1></center>
+</header>
+
+<section class="contact-info">
+    <h2>Get in Touch</h2>
+    <p>If you have any questions or would like to discuss your event, please contact us using the form below, or reach out through our contact details.</p>
+    <div class="contact-details">
+        <p><strong>Email:</strong> info@eventia.com</p>
+        <p><strong>Phone:</strong> 9374923674</p>
+        <p><strong>Address:</strong> 123 Event Street, City, State, ZIP</p>
+    </div>
+</section>
+
+<section class="contact-form">
+    <h2>Contact Form</h2>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<section class="map">
+    <h2>Our Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086718334284!2d144.95373531549694!3d-37.81627944209864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727e0f1a9a2d7a!2s123%20Event%20Street%2C%20City%2C%20State%2C%20ZIP!5e0!3m2!1sen!2s!4v1623329309380!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+
+{% endblock %}

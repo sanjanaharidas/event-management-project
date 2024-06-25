@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect,get_object_or_404
+from django.shortcuts import render,redirect
 from eventapp.models import Event,Booking
 from eventapp.forms import BookingForm
 from django.contrib.auth.decorators import login_required
@@ -61,7 +61,7 @@ def delete(request,p):
 def submit(request):
     if request.method == 'POST':
         booking_id = request.POST.get('booking_id')
-        booking = get_object_or_404(Booking, id=booking_id)
+        booking = Booking.objects.get(id=booking_id)
         booking.delete()
         msg = "Booking confirmed successfully!"
         return render(request, 'submit.html', {'msg': msg})
